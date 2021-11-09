@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer; 
+    background-color: rgb(235, 207, 217);
+    font-family: 'Poppins', sans-serif; 
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    color: rgb(54, 51, 51);
+    margin-top: 15px;
+
+}
+
+hr{
+    width: 150px;
+    height: 3px;
+    background-color: black ;
+    border-radius: 50%;
+
+    margin: 12px 0 12px 220px;
+}
+.cards{
+  display: flex;
+  width: 60rem; 
+}
+
+.pic {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 55rem;
+    border-radius: 10rem;
+    flex: .5;
+    position: relative;
+    transition: ease-in 0.7s;
+    margin:1rem ;
+    color: #fff;
+}
+
+.pic h3{
+    position: absolute;
+    font-size: 1.6rem;
+    bottom: 3rem;
+    left: 5rem;
+    opacity: 0;
+}
+
+.pic.active{
+    flex:1;
+}
+
+.pic.active h3{
+    opacity: 1;
+}
+
